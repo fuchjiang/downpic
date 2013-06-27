@@ -18,7 +18,7 @@ this.getFrom = function( src ,srcAttr ){
 			html += data;
 		}).on('end', function(){
 			srcList = parseimg.parseImg(options.host, html, srcAttr);
-			console.log(srcList);
+			// console.log(srcList);
 			for( var i = 0; i < srcList.length; i++ ){
 				getimg.getImg(srcList[i]);
 			}

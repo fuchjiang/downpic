@@ -1,4 +1,4 @@
-var s = require('sys');
+
 var fs = require('fs');
 var url = require('url');
 var http = require('http');
@@ -18,7 +18,6 @@ this.getImg = function( src ){
 	}
 	var fileName = src.substring(src.lastIndexOf('/') + 1);
 
-	// s.puts('getimg 要下载这个地址: ' + src + '下载图片: ' + fileName);
 	//保存地址
 	var savePath = './download/';
 
